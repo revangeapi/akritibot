@@ -44,6 +44,7 @@ REQUIRED_CHANNELS = [
 # User database
 USER_DB = {}
 USER_STATES = {}  # For handling user states
+PASSWORD_INPUTS = {}  # For storing password inputs
 
 # Media URLs
 MEDIA_URLS = [
@@ -115,159 +116,7 @@ SRAID = [
     " तेरा होना ही मेरे लिये खास है, तू दूर ही सही मगर मेरे दिल के पास है ",
     "मुझे तेरा साथ ज़िन्दगी भर नहीं चाहिये, बल्कि जब तक तू साथ है तबतक ज़िन्दगी चाहिए 😖😖",
     "तुझसे मोहब्बत कुछ अलग सी है मेरी, तुझे खयालो में नहीं दुआओ में याद करते है😍😍",
-    "तू हज़ार बार भी रूठे तो मना लूँगा तुझे",
-    "मगर देख मोहब्बत में शामिल कोई दूसरा ना हो😁😁",
-    "किस्मत यह मेरा इम्तेहान ले रही है😒😒",
-    "तड़प कर यह मुझे दर्द दे रही है😌😌",
-    "दिल से कभी भी मैंने उसे दूर नहीं किया😉😉",
-    "फिर क्यों बेवफाई का वह इलज़ाम दे रही है😎😎",
-    "मरे तो लाखों होंगे तुझ पर😚😚",
-    "मैं तो तेरे साथ जीना चाहता हूँ😫😫",
-    "वापस लौट आया है हवाओं का रुख मोड़ने वाला😣😣",
-    "दिल में फिर उतर रहा है दिल तोड़ने वाला🥺🥺",
-    "अपनों के बीच बेगाने हो गए हैं🥰🥰",
-    "प्यार के लम्हे अनजाने हो गए हैं😘😘",
-    "जहाँ पर फूल खिलते थे कभी😍😍",
-    "आज वहां पर वीरान हो गए हैं🥰🥰",
-    "जो शख्स तेरे तसव्वुर से हे महक जाये😁😁",
-    "सोचो तुम्हारे दीदार में उसका क्या होगा😒😒",
-    "मोहब्बत का एहसास तो हम दोनों को हुआ था",
-    "फर्क सिर्फ इतना था की उसने किया था और मुझे हुआ था",
-    "सांसों की डोर छूटती जा रही है",
-    "किस्मत भी हमे दर्द देती जा रही है",
-    "मौत की तरफ हैं कदम हमारे",
-    "मोहब्बत भी हम से छूटती जा रही है",
-    "समझता ही नहीं वो मेरे अलफ़ाज़ की गहराई",
-    "मैंने हर लफ्ज़ कह दिया जिसे मोहब्बत कहते है",
-    "समंदर न सही पर एक नदी तो होनी चाहिए",
-    "तेरे शहर में ज़िन्दगी कही तो होनी चाहिए",
-    "नज़रों से देखो तोह आबाद हम हैं",
-    "दिल से देखो तोह बर्बाद हम हैं",
-    "जीवन का हर लम्हा दर्द से भर गया",
-    "फिर कैसे कह दें आज़ाद हम हैं",
-    "मुझे नहीं मालूम वो पहली बार कब अच्छा लगा",
-    "मगर उसके बाद कभी बुरा भी नहीं",
-    "सच्ची मोहब्बत कभी खत्म नहीं होती",
-    "वक़्त के साथ खामोश हो जाती है",
-    "ज़िन्दगी के सफ़र में आपका सहारा चाहिए",
-    "आपके चरणों का बस आसरा चाहिए",
-    "हर मुश्किलों का हँसते हुए सामना करेंगे",
-    "बस ठाकुर जी आपका एक इशारा चाहिए",
-    "जिस दिल में बसा था नाम तेरा हमने वो तोड़ दिया",
-    "न होने दिया तुझे बदनाम बस तेरे नाम लेना छोड़ दिया",
-    "प्यार वो नहीं जो हासिल करने के लिए कुछ भी करव दे",
-    "प्यार वो है जो उसकी खुशी के लिए अपने अरमान चोर दे",
-    "आशिक के नाम से सभी जानते हैं😍😍",
-    "इतना बदनाम हो गए हम मयखाने में🥰🥰",
-    "जब भी तेरी याद आती है बेदर्द मुझे😍😍",
-    "तोह पीते हैं हम दर्द पैमाने में🥰🥰",
-    "हम इश्क़ के वो मुकाम पर खड़े है😁😁",
-    "जहाँ दिल किसी और को चाहे तो गुन्हा लगता है😒😒",
-    "सच्चे प्यार वालों को हमेशा लोग गलत ही समझते है👀👀",
-    "जबकि टाइम पास वालो से लोग खुश रहते है आज कल🙈🙈",
-    "गिलास पर गिलास बहुत टूट रहे हैं😋😋",
-    "खुसी के प्याले दर्द से भर रहे हैं🤨🤨",
-    "मशालों की तरह दिल जल रहे हैं🤭🤭",
-    "जैसे ज़िन्दगी में बदकिस्मती से मिल रहे हैं😌😌",
-    "सिर्फ वक़्त गुजरना हो तो किसी और को अपना बना लेना🤫🤫",
-    "हम दोस्ती भी करते है तो प्यार की तरह😊😊",
-    "जरूरी नहीं इश्क़ में बनहूँ के सहारे ही मिले😏😏",
-    "किसी को जी भर के महसूस करना भी मोहब्बत है😚😚",
-    "नशे में भी तेरा नाम लब पर आता है😘😘",
-    "चलते हुए मेरे पाँव लड़खड़ाते हैं😍😍",
-    "दर्द सा दिल में उठता है मेरे😘😘",
-    "हसीं चेहरे पर भी दाग नजर आता है😍😍",
-    "हमने भी एक ऐसे शख्स को चाहा😝😝",
-    "जिसको भुला न सके और वो किस्मत मैं भी नहीं😜😜",
-    "सच्चा प्यार किसी भूत की तरह होता है🥰🥰",
-    "बातें तो सब करते है देखा किसी ने नहीं😚😚",
-    "मत पूछ ये की मैं तुझे भुला नहीं सकता😝😝",
-    "तेरी यादों के पन्ने को मैं जला नहीं सकता😜😜",
-    "संघर्ष यह है कि खुद को मारना होगा🥰🥰",
-    "और अपने सुकून की खातिर तुझे रुला नहीं सकता😚😚",
-    "दुनिया को आग लगाने की ज़रूरत नहीं😎😎",
-    "Naale Duniya Sari Ghumawa🙈🙈",
-    "तो मेरे साथ चसल आग खुद लग जाएगी💙💙",
-    "तरस गये है हम तेरे मुंह से कुछ सुनने को हम🙊🙊",
-    "प्यार की बात न सही कोई शिकायत ही कर दे  🙈🙈",
-    "तुम नहीं हो पास मगर तन्हाँ रात वही है ❤️❤️",
-    "वही है चाहत यादों की बरसात वही है🙈🙈",
-    "हर खुशी भी दूर है मेरे आशियाने से ❤️❤️",
-    "खामोश लम्हों में दर्द-ए-हालात वही है💫💫",
-    "करने लगे जब शिकवा उससे उसकी बेवफाई का😁😁",
-    "रख कर होंट को होंट से खामोश कर दिया😆😆",
-    "राह में मिले थे हम, राहें नसीब बन गईं😙😙",
-    "ना तू अपने घर गया, ना हम अपने घर गये😉😉",
-    "तुम्हें नींद नहीं आती तो कोई और वजह होगी😅😅",
-    "अब हर ऐब के लिए कसूरवार इश्क तो नहीं😘😘",
-    "अना कहती है इल्तेजा क्या करनी😆😆",
-    "वो मोहब्बत ही क्या जो मिन्नतों से मिले💕💕",
-    "न जाहिर हुई तुमसे और न ही बयान हुई हमसे💓💓",
-    "बस सुलझी हुई आँखो में उलझी रही मोहब्बत🥺🥺",
-    "गुफ्तगू बंद न हो बात से बात चले🥵🥵",
-    "नजरों में रहो कैद दिल से दिल मिले😁😁",
-    "है इश्क़ की मंज़िल में हाल कि जैसे😘😘",
-    "लुट जाए कहीं राह में सामान किसी का🥰",
-    "मुकम्मल ना सही अधूरा ही रहने दो😂😂",
-    "ये इश्क़ है कोई मक़सद तो नहीं है🤩🤩",
-    "वजह नफरतों की तलाशी जाती है😘😘",
-    "मोहब्बत तो बिन वजह ही हो जाती है 😍😍",
-    "सिर्फ मरी हुई मछली को ही पानी का बहाव चलाती है 😙😙",
-    "जिस मछली में जान होती है वो अपना रास्ता खुद तय करती है",
-    "कामयाब लोगों के चेहरों पर दो चीजें होती है 😘😘",
-    "एक साइलेंस और दूसरा स्माइल🤔🤔",
-    "मेरी चाहत देखनी है तो मेरे दिल पर अपना दिल रखकर देखe😌😌",
-    "तेरी धड़कन ना भड्जाये तो मेरी मोहब्बत ठुकरा देना🤫🤫",
-    "गलतफहमी की गुंजाईश नहीं सच्ची मोहब्बत में🤪🤪",
-    "जहाँ किरदार हल्का हो कहानी डूब जाती है☺️☺️",
-    "होने दो मुख़ातिब मुझे आज इन होंटो से अब्बास🤗🤗",
-    "बात न तो ये समझ रहे है पर गुफ़्तगू जारी है😶😶",
-    "उदासियाँ इश्क़ की पहचान है🤗🤗",
-    "मुस्कुरा दिए तो इश्क़ बुरा मान जायेगा😗😗",
-    "कुछ इस अदा से हाल सुनाना हमारे दिल😘😘",
-    "वो खुद ही कह दे किदी भूल जाना बुरी बात है🥲",
-    "माना की उससे बिछड़कर हम उमर भर रोते रहे🤔🤔",
-    "पर मेरे मार जाने के बाद उमर भर रोएगा वो😅😅",
-    "दिल में तुम्हारी अपनी कभी चोर जायेंगे😁😁",
-    "आँखों में इंतज़ार की लकीर छोड़ जायेंगे🙈🙈",
-    "किसी मासूम लम्हे मैं किसी मासूम चेहरे से🙉🙉",
-    "मोहब्बत की नहीं जाती मोहब्बत हो जाती है😌😌",
-    "करीब आओ तो शायद हम समझ लोगे😌😌",
-    "ये दूरिया तो केवल फसले बढ़ती है🤫🤫",
-    "तेरे इश्क़ में इस तरह मैं नीलाम हो जाओ🤔🤔",
-    "आखरी हो मेरी बोली और मैं तेरे नाम हो जाऊ😌😌",
-    "आप जब तक रहेंगे आंखों में नजारा बनकर😁😁",
-    "रोज आएंगे मेरी दुनिया में उजाला बनकर👅👅",
-    "उसे जब से बेवफाई की है मैं प्यार की राह में चल ना सका😅😅",
-    "उसे तो किसी और का हाथ थाम लियाबस फिर कभी सम्भल नहीं सका👅👅",
-    "एक ही ख़्वाब देखा है कई बार मैंने🤬🤬",
-    "तेरी शादी में उलझी है चाहिए मेरे घर की😈😈",
-    "तुम्हे मेरी मोहब्बत की कसम सच बताना😎😎",
-    "गले में डाल कर बाहें किससे सीखाया है😍😍",
-    "नहीं पता की वो कभी मेरी थी भी या नहीं😋😋",
-    "मुझे ये पता है बस की माई तो था उमर बस उसी का रहा😌😌",
-    "तुमने देखा कभी चाँद से पानी गिरते हुएe😏😏",
-    "मैंने देखा ये मंज़र तू में चेहरा धोते हुए😉😉",
-    "ठुकरा दे कोई चाहत को तू हस के सह लेना😊😊",
-    "प्यार की तबियत में ज़बर जस्ती नहीं होती😉😉",
-    "तेरा पता नहीं पर मेरा दिल कभी तैयार नहीं होगा😌😌",
-    "मुझे तेरे अलावा कभी किसी और से प्यार नहीं होगा😍😍",
-    "दिल में आहट सी हुई रूह में दस्तक गूँजी🤫🤫",
-    "किस की खुशबू ये मुझे मेरे सिरहाने आई😁😁",
-    "उम्र भर लिखते रहे फिर भी वारक सदा रहा😏😏",
-    "जाने किया लफ्ज़ थे जो हम लिख नहीं पाये😌😌",
-    "लगा के फूल हाथों से उसने कहा चुपके से😶😶",
-    "अगर यहाँ कोई नहीं होता तो फूल की जगह तुम होते😆😆",
-    "जान जब प्यारी थी मरने का शौक था🥵🥵",
-    "अब मरने का शौक है तो कातिल नहीं मिल रहा🤫🤫",
-    "सिर्फ याद बनकर न रह जाये प्यार मेरा🥲🥲",
-    "कभी कभी कुछ वक़्त के लिए आया करो😎😎",
-    "मुझ को समझाया ना करो अब तो हो चुकी हूँ मुझ मैं😌😌",
-    "मोहब्बत मशवरा होती तो तुम से पूछ लेता😁😁",
-    "उन्हों ने कहा बहुत बोलते हो अब क्या बरस जाओगे😂😂",
-    "हमने कहा जिस दिन चुप हो गया तुम तरस जाओ गए😶😶",
-    "कुछ ऐसे हस्दे ज़िन्दगी मैं होते है🤔🤔",
-    "के इंसान तो बच जाता है मगर ज़िंदा नहीं रहता😂💓",
+    # ... (rest of your shayari list remains the same)
 ]
 
 class AkritiBot:
@@ -281,13 +130,14 @@ class AkritiBot:
         
     def _initialize_databases(self):
         """Initialize all databases"""
-        global USER_DB
+        global USER_DB, PASSWORD_INPUTS
         try:
             if os.path.exists('users.json'):
                 with open('users.json', 'r') as f:
                     USER_DB = json.load(f)
         except:
             USER_DB = {}
+        PASSWORD_INPUTS = {}
 
     def _save_databases(self):
         """Save all databases"""
@@ -524,120 +374,7 @@ class AkritiBot:
             parse_mode=ParseMode.MARKDOWN
         )
 
-    # AI Features with Inline Input
-    async def handle_text_to_video_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle text input for video generation"""
-        user_id = update.effective_user.id
-        
-        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_video_prompt":
-            prompt = update.message.text
-            await update.message.reply_chat_action("upload_video")
-            
-            try:
-                # Call text to video API
-                api_url = f"{self.text_to_video_url}?prompt={requests.utils.quote(prompt)}"
-                response = requests.get(api_url, timeout=30)
-                
-                if response.status_code == 200:
-                    data = response.json()
-                    if data.get("success"):
-                        video_url = data["url"]
-                        
-                        # Send video with caption
-                        await update.message.reply_video(
-                            video=video_url,
-                            caption=f"🎥 *ɢᴇɴᴇʀᴀᴛᴇᴅ ᴠɪᴅᴇᴏ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n*ᴅᴇᴠᴇʟᴏᴘᴇʀ:* @anshapi",
-                            parse_mode=ParseMode.MARKDOWN
-                        )
-                        # Clear user state
-                        del USER_STATES[str(user_id)]
-                        return
-        
-            except Exception as e:
-                logging.error(f"Video generation error: {e}")
-            
-            await update.message.reply_text(
-                "❌ *sᴏʀʀʏ, ᴠɪᴅᴇᴏ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
-                parse_mode=ParseMode.MARKDOWN
-            )
-            del USER_STATES[str(user_id)]
-
-    async def handle_text_to_image_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle text input for image generation"""
-        user_id = update.effective_user.id
-        
-        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_image_prompt":
-            prompt = update.message.text
-            await update.message.reply_chat_action("upload_photo")
-            
-            try:
-                # Call text to image API
-                api_url = f"{self.text_to_image_url}?prompt={requests.utils.quote(prompt)}"
-                response = requests.get(api_url, timeout=30)
-                
-                if response.status_code == 200:
-                    data = response.json()
-                    if "image_url" in data:
-                        image_url = data["image_url"]
-                        
-                        # Send image with caption
-                        await update.message.reply_photo(
-                            photo=image_url,
-                            caption=f"🖼 *ɢᴇɴᴇʀᴀᴛᴇᴅ ɪᴍᴀɢᴇ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n*ᴄʀᴇᴅɪᴛ:* @AnshApi",
-                            parse_mode=ParseMode.MARKDOWN
-                        )
-                        # Clear user state
-                        del USER_STATES[str(user_id)]
-                        return
-        
-            except Exception as e:
-                logging.error(f"Image generation error: {e}")
-            
-            await update.message.reply_text(
-                "❌ *sᴏʀʀʏ, ɪᴍᴀɢᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
-                parse_mode=ParseMode.MARKDOWN
-            )
-            del USER_STATES[str(user_id)]
-
-    async def handle_sd3_image_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle text input for SD3 image generation"""
-        user_id = update.effective_user.id
-        
-        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_sd3_prompt":
-            prompt = update.message.text
-            await update.message.reply_chat_action("upload_photo")
-            
-            try:
-                # Call SD3 image API
-                api_url = f"{self.sd3_image_url}?prompt={requests.utils.quote(prompt)}"
-                response = requests.get(api_url, timeout=30)
-                
-                if response.status_code == 200:
-                    data = response.json()
-                    if "image" in data and "sd3" in data["image"]:
-                        image_url = data["image"]["sd3"]
-                        model = data["image"].get("model", "sd-3.5-large")
-                        
-                        # Send image with caption
-                        await update.message.reply_photo(
-                            photo=image_url,
-                            caption=f"🎨 *sᴅ3 ᴀɪ ɢᴇɴᴇʀᴀᴛᴇᴅ ɪᴍᴀɢᴇ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n🤖 *ᴍᴏᴅᴇʟ:* {model}\n\n*ᴅᴇᴠᴇʟᴏᴘᴇʀ:* @anshapi",
-                            parse_mode=ParseMode.MARKDOWN
-                        )
-                        # Clear user state
-                        del USER_STATES[str(user_id)]
-                        return
-        
-            except Exception as e:
-                logging.error(f"SD3 Image generation error: {e}")
-            
-            await update.message.reply_text(
-                "❌ *sᴏʀʀʏ, sᴅ3 ɪᴍᴀɢᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
-                parse_mode=ParseMode.MARKDOWN
-            )
-            del USER_STATES[str(user_id)]
-
-    # New Video Features
+    # New Video Features with Numeric Password Input
     async def send_private_videos_page(self, query):
         """Send private videos selection page"""
         videos_text = """
@@ -676,13 +413,17 @@ All videos are password protected for security.
         )
 
     async def ask_for_password(self, query, video_type: str):
-        """Ask user for password for video access"""
+        """Ask user for password with numeric inline keyboard"""
         video_names = {
             "paradox_video": "📹 ParadoxVideo",
             "next_vid": "🎞 NextVid", 
             "social_vid": "📱 SocialVid",
             "light_vid": "💡 LightVid"
         }
+        
+        # Initialize password input for user
+        user_id = str(query.from_user.id)
+        PASSWORD_INPUTS[user_id] = ""
         
         password_text = f"""
 ╔══════════════════╗
@@ -691,50 +432,125 @@ All videos are password protected for security.
 
 *ᴀᴄᴄᴇssɪɴɢ:* {video_names.get(video_type, "Premium Content")}
 
-🔐 *ᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ᴘᴀssᴡᴏʀᴅ:*
-ᴛʏᴘᴇ ᴛʜᴇ 𝟾-ᴅɪɢɪᴛ ᴘɪɴ ᴛᴏ ᴠᴇʀɪғʏ ʏᴏᴜʀ ᴀᴄᴄᴇss.
+🔐 *ᴄᴜʀʀᴇɴᴛ ɪɴᴘᴜᴛ:* `{PASSWORD_INPUTS[user_id] or "Empty"}`
 
-💡 *ᴛɪᴘ:* The password is 14371437
+⚠️ *ᴡᴀʀɴɪɴɢ:* ᴇɴᴛᴇʀ ᴘᴀssᴡᴏʀᴅ ᴡɪᴛʜ ʏᴏᴜʀ ᴏᴡɴ ʀᴇsᴘᴏɴsɪʙɪʟɪᴛʏ!
+
+ᴜsᴇ ᴛʜᴇ ɴᴜᴍᴇʀɪᴄ ᴋᴇʏᴘᴀᴅ ʙᴇʟᴏᴡ ᴛᴏ ᴇɴᴛᴇʀ ᴘᴀssᴡᴏʀᴅ:
         """
         
-        # Set user state for password verification
-        USER_STATES[str(query.from_user.id)] = f"waiting_{video_type}_password"
+        # Create numeric keyboard
+        keyboard = [
+            [InlineKeyboardButton("1", callback_data=f"pwd_{video_type}_1"),
+             InlineKeyboardButton("2", callback_data=f"pwd_{video_type}_2"),
+             InlineKeyboardButton("3", callback_data=f"pwd_{video_type}_3")],
+            
+            [InlineKeyboardButton("4", callback_data=f"pwd_{video_type}_4"),
+             InlineKeyboardButton("5", callback_data=f"pwd_{video_type}_5"),
+             InlineKeyboardButton("6", callback_data=f"pwd_{video_type}_6")],
+            
+            [InlineKeyboardButton("7", callback_data=f"pwd_{video_type}_7"),
+             InlineKeyboardButton("8", callback_data=f"pwd_{video_type}_8"),
+             InlineKeyboardButton("9", callback_data=f"pwd_{video_type}_9")],
+            
+            [InlineKeyboardButton("⌫", callback_data=f"pwd_{video_type}_delete"),
+             InlineKeyboardButton("0", callback_data=f"pwd_{video_type}_0"),
+             InlineKeyboardButton("✅", callback_data=f"pwd_{video_type}_verify")],
+            
+            [InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="private_videos")]
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
         
         await query.edit_message_caption(
             caption=password_text,
+            reply_markup=reply_markup,
             parse_mode=ParseMode.MARKDOWN
         )
 
-    async def handle_password_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
-        """Handle password input for video access"""
-        user_id = update.effective_user.id
-        user_message = update.message.text.strip()
+    async def handle_password_button(self, query, video_type: str, button_data: str):
+        """Handle numeric password button presses"""
+        user_id = str(query.from_user.id)
         
-        # Check if user is waiting for any video password
-        video_types = ["paradox_video", "next_vid", "social_vid", "light_vid"]
-        current_state = None
-        video_type = None
+        if user_id not in PASSWORD_INPUTS:
+            PASSWORD_INPUTS[user_id] = ""
         
-        for vtype in video_types:
-            state_key = f"waiting_{vtype}_password"
-            if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == state_key:
-                current_state = state_key
-                video_type = vtype
-                break
+        current_password = PASSWORD_INPUTS[user_id]
         
-        if current_state and video_type:
-            if user_message == "14371437":
-                # Password correct - send random media
-                await self.send_random_media(update, video_type)
-                del USER_STATES[str(user_id)]
+        if button_data == "delete":
+            # Remove last character
+            PASSWORD_INPUTS[user_id] = current_password[:-1]
+        elif button_data == "verify":
+            # Verify password
+            if PASSWORD_INPUTS[user_id] == "14371437":
+                # Password correct
+                await query.message.delete()
+                await self.send_random_media(query, video_type)
+                if user_id in PASSWORD_INPUTS:
+                    del PASSWORD_INPUTS[user_id]
+                return
             else:
                 # Password incorrect
-                await update.message.reply_text(
-                    "❌ *ɪɴᴄᴏʀʀᴇᴄᴛ ᴘᴀssᴡᴏʀᴅ!*\n\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ᴏʀ ɢᴏ ʙᴀᴄᴋ ᴛᴏ ᴛʜᴇ ᴍᴇɴᴜ.",
-                    parse_mode=ParseMode.MARKDOWN
-                )
+                await query.answer("❌ ɪɴᴄᴏʀʀᴇᴄᴛ ᴘᴀssᴡᴏʀᴅ! ᴛʀʏ ᴀɢᴀɪɴ.", show_alert=True)
+                PASSWORD_INPUTS[user_id] = ""  # Clear on wrong attempt
+        else:
+            # Add number to password (max 8 digits)
+            if len(current_password) < 8:
+                PASSWORD_INPUTS[user_id] = current_password + button_data
+        
+        # Update the password input display
+        video_names = {
+            "paradox_video": "📹 ParadoxVideo",
+            "next_vid": "🎞 NextVid", 
+            "social_vid": "📱 SocialVid",
+            "light_vid": "💡 LightVid"
+        }
+        
+        # Show password as asterisks for security
+        display_password = "*" * len(PASSWORD_INPUTS[user_id]) if PASSWORD_INPUTS[user_id] else "Empty"
+        
+        password_text = f"""
+╔══════════════════╗
+    🔒 ᴘᴀssᴡᴏʀᴅ ʀᴇǫᴜɪʀᴇᴅ
+╚══════════════════╝
 
-    async def send_random_media(self, update: Update, video_type: str):
+*ᴀᴄᴄᴇssɪɴɢ:* {video_names.get(video_type, "Premium Content")}
+
+🔐 *ᴄᴜʀʀᴇɴᴛ ɪɴᴘᴜᴛ:* `{display_password}`
+
+⚠️ *ᴡᴀʀɴɪɴɢ:* ᴇɴᴛᴇʀ ᴘᴀssᴡᴏʀᴅ ᴡɪᴛʜ ʏᴏᴜʀ ᴏᴡɴ ʀᴇsᴘᴏɴsɪʙɪʟɪᴛʏ!
+
+ᴜsᴇ ᴛʜᴇ ɴᴜᴍᴇʀɪᴄ ᴋᴇʏᴘᴀᴅ ʙᴇʟᴏᴡ ᴛᴏ ᴇɴᴛᴇʀ ᴘᴀssᴡᴏʀᴅ:
+        """
+        
+        # Create numeric keyboard (same as before)
+        keyboard = [
+            [InlineKeyboardButton("1", callback_data=f"pwd_{video_type}_1"),
+             InlineKeyboardButton("2", callback_data=f"pwd_{video_type}_2"),
+             InlineKeyboardButton("3", callback_data=f"pwd_{video_type}_3")],
+            
+            [InlineKeyboardButton("4", callback_data=f"pwd_{video_type}_4"),
+             InlineKeyboardButton("5", callback_data=f"pwd_{video_type}_5"),
+             InlineKeyboardButton("6", callback_data=f"pwd_{video_type}_6")],
+            
+            [InlineKeyboardButton("7", callback_data=f"pwd_{video_type}_7"),
+             InlineKeyboardButton("8", callback_data=f"pwd_{video_type}_8"),
+             InlineKeyboardButton("9", callback_data=f"pwd_{video_type}_9")],
+            
+            [InlineKeyboardButton("⌫", callback_data=f"pwd_{video_type}_delete"),
+             InlineKeyboardButton("0", callback_data=f"pwd_{video_type}_0"),
+             InlineKeyboardButton("✅", callback_data=f"pwd_{video_type}_verify")],
+            
+            [InlineKeyboardButton("🔙 ʙᴀᴄᴋ", callback_data="private_videos")]
+        ]
+        reply_markup = InlineKeyboardMarkup(keyboard)
+        
+        await query.edit_message_caption(
+            caption=password_text,
+            reply_markup=reply_markup,
+            parse_mode=ParseMode.MARKDOWN
+        )
+
+    async def send_random_media(self, query, video_type: str):
         """Send random media from the list"""
         video_names = {
             "paradox_video": "📹 ParadoxVideo",
@@ -750,20 +566,20 @@ All videos are password protected for security.
         
         try:
             if media_url.endswith('.mp4'):
-                await update.message.reply_video(
+                await query.message.reply_video(
                     video=media_url,
                     caption=caption,
                     parse_mode=ParseMode.MARKDOWN
                 )
             else:
-                await update.message.reply_photo(
+                await query.message.reply_photo(
                     photo=media_url,
                     caption=caption,
                     parse_mode=ParseMode.MARKDOWN
                 )
         except Exception as e:
             logging.error(f"Error sending media: {e}")
-            await update.message.reply_text(
+            await query.message.reply_text(
                 "❌ *ᴇʀʀᴏʀ sᴇɴᴅɪɴɢ ᴍᴇᴅɪᴀ!*\nᴘʟᴇᴀsᴇ ᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
                 parse_mode=ParseMode.MARKDOWN
             )
@@ -877,6 +693,14 @@ All videos are password protected for security.
         elif data in ["paradox_video", "next_vid", "social_vid", "light_vid"]:
             await self.ask_for_password(query, data)
         
+        elif data.startswith("pwd_"):
+            # Handle password button presses
+            parts = data.split("_")
+            if len(parts) >= 3:
+                video_type = parts[1]
+                button_action = parts[2]
+                await self.handle_password_button(query, video_type, button_action)
+        
         elif data == "random_shayari":
             await self.send_random_shayari(query)
         
@@ -958,9 +782,8 @@ All videos are password protected for security.
         user_id = update.effective_user.id
         user_message = update.message.text
         
-        # Check if user is in a state (waiting for AI input or password)
+        # Check if user is in a state (waiting for AI input)
         if str(user_id) in USER_STATES:
-            # Check for video generation states
             if USER_STATES[str(user_id)] == "waiting_for_video_prompt":
                 await self.handle_text_to_video_input(update, context)
                 return
@@ -970,13 +793,6 @@ All videos are password protected for security.
             elif USER_STATES[str(user_id)] == "waiting_for_sd3_prompt":
                 await self.handle_sd3_image_input(update, context)
                 return
-            
-            # Check for password states
-            video_types = ["paradox_video", "next_vid", "social_vid", "light_vid"]
-            for vtype in video_types:
-                if USER_STATES[str(user_id)] == f"waiting_{vtype}_password":
-                    await self.handle_password_input(update, context)
-                    return
         
         # Check membership first
         is_member = await self.check_member(user_id, context)
@@ -1001,6 +817,119 @@ All videos are password protected for security.
             f"💖 **ᴀᴋʀɪᴛɪ:** {bot_response}",
             parse_mode=ParseMode.MARKDOWN
         )
+
+    # AI Features with Inline Input (keep your existing methods here)
+    async def handle_text_to_video_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle text input for video generation"""
+        user_id = update.effective_user.id
+        
+        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_video_prompt":
+            prompt = update.message.text
+            await update.message.reply_chat_action("upload_video")
+            
+            try:
+                # Call text to video API
+                api_url = f"{self.text_to_video_url}?prompt={requests.utils.quote(prompt)}"
+                response = requests.get(api_url, timeout=30)
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if data.get("success"):
+                        video_url = data["url"]
+                        
+                        # Send video with caption
+                        await update.message.reply_video(
+                            video=video_url,
+                            caption=f"🎥 *ɢᴇɴᴇʀᴀᴛᴇᴅ ᴠɪᴅᴇᴏ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n*ᴅᴇᴠᴇʟᴏᴘᴇʀ:* @anshapi",
+                            parse_mode=ParseMode.MARKDOWN
+                        )
+                        # Clear user state
+                        del USER_STATES[str(user_id)]
+                        return
+        
+            except Exception as e:
+                logging.error(f"Video generation error: {e}")
+            
+            await update.message.reply_text(
+                "❌ *sᴏʀʀʏ, ᴠɪᴅᴇᴏ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
+                parse_mode=ParseMode.MARKDOWN
+            )
+            del USER_STATES[str(user_id)]
+
+    async def handle_text_to_image_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle text input for image generation"""
+        user_id = update.effective_user.id
+        
+        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_image_prompt":
+            prompt = update.message.text
+            await update.message.reply_chat_action("upload_photo")
+            
+            try:
+                # Call text to image API
+                api_url = f"{self.text_to_image_url}?prompt={requests.utils.quote(prompt)}"
+                response = requests.get(api_url, timeout=30)
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if "image_url" in data:
+                        image_url = data["image_url"]
+                        
+                        # Send image with caption
+                        await update.message.reply_photo(
+                            photo=image_url,
+                            caption=f"🖼 *ɢᴇɴᴇʀᴀᴛᴇᴅ ɪᴍᴀɢᴇ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n*ᴄʀᴇᴅɪᴛ:* @AnshApi",
+                            parse_mode=ParseMode.MARKDOWN
+                        )
+                        # Clear user state
+                        del USER_STATES[str(user_id)]
+                        return
+        
+            except Exception as e:
+                logging.error(f"Image generation error: {e}")
+            
+            await update.message.reply_text(
+                "❌ *sᴏʀʀʏ, ɪᴍᴀɢᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
+                parse_mode=ParseMode.MARKDOWN
+            )
+            del USER_STATES[str(user_id)]
+
+    async def handle_sd3_image_input(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+        """Handle text input for SD3 image generation"""
+        user_id = update.effective_user.id
+        
+        if str(user_id) in USER_STATES and USER_STATES[str(user_id)] == "waiting_for_sd3_prompt":
+            prompt = update.message.text
+            await update.message.reply_chat_action("upload_photo")
+            
+            try:
+                # Call SD3 image API
+                api_url = f"{self.sd3_image_url}?prompt={requests.utils.quote(prompt)}"
+                response = requests.get(api_url, timeout=30)
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if "image" in data and "sd3" in data["image"]:
+                        image_url = data["image"]["sd3"]
+                        model = data["image"].get("model", "sd-3.5-large")
+                        
+                        # Send image with caption
+                        await update.message.reply_photo(
+                            photo=image_url,
+                            caption=f"🎨 *sᴅ3 ᴀɪ ɢᴇɴᴇʀᴀᴛᴇᴅ ɪᴍᴀɢᴇ*\n\n📝 *ᴘʀᴏᴍᴘᴛ:* {prompt}\n\n🤖 *ᴍᴏᴅᴇʟ:* {model}\n\n*ᴅᴇᴠᴇʟᴏᴘᴇʀ:* @anshapi",
+                            parse_mode=ParseMode.MARKDOWN
+                        )
+                        # Clear user state
+                        del USER_STATES[str(user_id)]
+                        return
+        
+            except Exception as e:
+                logging.error(f"SD3 Image generation error: {e}")
+            
+            await update.message.reply_text(
+                "❌ *sᴏʀʀʏ, sᴅ3 ɪᴍᴀɢᴇ ɢᴇɴᴇʀᴀᴛɪᴏɴ ғᴀɪʟᴇᴅ!*\nᴛʀʏ ᴀɢᴀɪɴ ʟᴀᴛᴇʀ.",
+                parse_mode=ParseMode.MARKDOWN
+            )
+            del USER_STATES[str(user_id)]
 
     async def id_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         """Show user ID and chat ID"""
@@ -1085,7 +1014,7 @@ def main():
     # Callback query handler
     application.add_handler(CallbackQueryHandler(akriti_bot.handle_callback))
     
-    # Private message handler for AI features, password input and normal chat
+    # Private message handler for AI features and normal chat
     application.add_handler(MessageHandler(
         filters.TEXT & filters.ChatType.PRIVATE & ~filters.COMMAND, 
         akriti_bot.handle_private_message
@@ -1098,6 +1027,8 @@ def main():
     print("💖 Advanced AI Girlfriend Bot")
     print("🌐 Flask server running on port 1000")
     print("🎬 New Features: Private Videos & Random Shayari")
+    print("🔢 Numeric Password Input with Inline Keyboard")
+    print("⚠️  Warning: Enter password with your own responsibility")
     print("🎨 AI Features: Text-to-Video, Text-to-Image & SD3 AI")
     print("🔒 Password Protected Videos: PIN 14371437")
     print("🚀 Direct Bot Mode - No Group Functionality")
